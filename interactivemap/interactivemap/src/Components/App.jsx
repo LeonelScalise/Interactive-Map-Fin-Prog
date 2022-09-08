@@ -47,7 +47,7 @@ export function App() {
                     color: "#666",
                   });
 
-                  layer.bindPopup(`${provincia.properties.fna}`);
+                  layer.bindPopup(`<h1>${provincia.properties.fna}</h1><br>Población: ${provincia.properties.poblacion}`);
 
                   layer.on("mouseover", (e) => {
                     layer.openPopup();
